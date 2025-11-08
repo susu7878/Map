@@ -20,12 +20,6 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-.item1 {
-  grid-area: sidebar;
-}
-.item2 {
-  grid-area: map;
-}
 
 body {
   font-family: 'Manrope', sans-serif;
@@ -40,13 +34,20 @@ body {
   grid-template-columns: 1fr 2fr;
   grid-template-areas: 'sidebar map ';
 }
+.item1 {
+  grid-area: sidebar;
+}
+.item2 {
+  grid-area: map;
+}
 
 @media (max-width: 768px) {
   body {
+    /* display: grid; */
     grid-template-columns: 1fr;
     grid-template-areas:
-      'sidebar'
-      'map';
+      'map'
+      'sidebar';
   }
 
   li.workout,
