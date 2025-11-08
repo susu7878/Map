@@ -258,8 +258,10 @@ a:visited {
   padding: 5px 20px;
 }
 .reset {
-  padding: 5px 27px;
+  padding: 5px 30px;
+  width: fit-content;
 }
+
 .buttons {
   display: flex;
   justify-content: space-between;
